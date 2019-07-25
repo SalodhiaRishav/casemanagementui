@@ -45,7 +45,13 @@ export default {
   },
   computed: {
     statusTypes: () => {
-      const statusTypes = ["New", "In progress", "Closed"];
+      const statusTypes = [
+        { text: "Select Status", value: null },
+
+        "New",
+        "In progress",
+        "Closed"
+      ];
       return statusTypes;
     }
   }
