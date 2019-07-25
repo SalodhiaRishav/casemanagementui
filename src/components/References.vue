@@ -19,9 +19,6 @@
       >
         <b-card-body>
           <b-table fixed striped hover :items="references" :fields="fields">
-            <template slot="index" slot-scope="data">
-              {{ data.index + 1 }}
-            </template>
             <template slot="#" slot-scope="data">
               <button @click="deleteReference(data.index)">Delete</button>
             </template>
@@ -48,9 +45,6 @@
                 v-model="referenceForm.comment"
               ></b-form-input>
             </template>
-            <template slot="HEAD_index">
-              {{&nbsp;}}
-            </template>
             <template slot="HEAD_#">
               {{&nbsp;}}
             </template>
@@ -67,7 +61,7 @@ export default {
   data() {
     return {
       showReferenceForm: false,
-      fields: ["index", "type", "identity", "comment", "#"],
+      fields: ["type", "identity", "comment", "#"],
       references: [],
       referenceForm: {
         type: null,
