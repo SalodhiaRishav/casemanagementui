@@ -1,15 +1,16 @@
 <template>
   <div>
     <b-card no-body>
-      <b-card-header
-        header-tag="header"
-        header-bg-variant="secondary"
-        header-text-variant="white"
-        class="p-1"
-      >
-        <appCaseHeader></appCaseHeader>
-      </b-card-header>
-      <b-tabs card>
+      <div class="mainCaseHeader">
+        <b-card-header
+          header-tag="header"
+          header-text-variant="white"
+          class="p-1"
+        >
+          <appCaseHeader></appCaseHeader>
+        </b-card-header>
+      </div>
+      <b-tabs card class="myMainBodyCard">
         <b-tab title="Header" active>
           <appCaseManagement></appCaseManagement>
         </b-tab>
@@ -29,3 +30,7 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+@import url(./styles/CaseManagementHeaderStyle.css);
+</style>

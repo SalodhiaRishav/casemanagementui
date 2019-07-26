@@ -1,18 +1,19 @@
 <template>
   <div role="tablist">
     <b-card no-body>
-      <b-card-header
-        header-tag="header"
-        header="References"
-        header-bg-variant="secondary"
-        header-text-variant="white"
-        v-b-toggle.accordion-references
-        class="p-1"
-        role="tab"
-      >
-      </b-card-header>
+      <div class="componentHeader">
+        <b-card-header
+          header-tag="header"
+          header="References"
+          header-text-variant="white"
+          v-b-toggle.accordion-references
+          class="p-1"
+          role="tab"
+        >
+        </b-card-header>
+      </div>
       <b-collapse id="accordion-references" visible role="tabpanel">
-        <b-card-body>
+        <b-card-body class="componentCard">
           <b-table fixed striped hover :items="references" :fields="fields">
             <template slot="#" slot-scope="data">
               <button @click="deleteReference(data.index)">Delete</button>

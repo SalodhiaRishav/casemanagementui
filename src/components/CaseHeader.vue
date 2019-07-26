@@ -37,5 +37,5 @@ export default {};
 </script>
 
 <style scoped>
-@import url(./styles/CaseManagementHeaderStyle.css);
+@import url(./styles/CaseHeaderStyle.css);
 </style>

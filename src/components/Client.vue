@@ -2,18 +2,19 @@
   <div>
     <div role="tablist">
       <b-card no-body>
-        <b-card-header
-          header-tag="header"
-          header="Client"
-          header-bg-variant="secondary"
-          header-text-variant="white"
-          v-b-toggle.accordion-client
-          class="p-1"
-          role="tab"
-        >
-        </b-card-header>
+        <div class="componentHeader">
+          <b-card-header
+            header-tag="header"
+            header="Client"
+            header-text-variant="white"
+            v-b-toggle.accordion-client
+            class="p-1"
+            role="tab"
+          >
+          </b-card-header>
+        </div>
         <b-collapse id="accordion-client" visible role="tabpanel">
-          <b-card-body>
+          <b-card-body class="componentCard">
             <b-form>
               <b-form-group
                 id="clientIdentifier"
