@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <appCaseManagement></appCaseManagement>
+    <appCaseManagementHeader></appCaseManagementHeader>
     <!-- <appReferences></appReferences> -->
     <!-- <appAssignedTo></appAssignedTo> -->
     <!-- <appCaseStatus></appCaseStatus> -->
@@ -11,10 +11,11 @@
 </template>
 
 <script>
+import CaseManagementHeader from "@/components/CaseManagementHeader.vue";
 // import Client from "@/components/Client.vue";
 // import AssignedTo from "@/components/AssignedTo.vue";
 // import References from "@/components/References.vue";
-import CaseManagement from "@/components/CaseManagement.vue";
+// import CaseManagement from "@/components/CaseManagement.vue";
 // import CaseStatus from "@/components/CaseStatus.vue";
 // import CaseInformation from "@/components/CaseInformation.vue";
 // import Notes from "@/components/Notes.vue";
@@ -28,7 +29,11 @@ export default {
     // appCaseStatus:CaseStatus,
     // appAssignedTo: AssignedTo,
     // appReferences: References,
-    appCaseManagement: CaseManagement
+    appCaseManagementHeader: CaseManagementHeader
   }
 };
 </script>
+
+<style>
+@import url(./GlobalStyle.css);
+</style>

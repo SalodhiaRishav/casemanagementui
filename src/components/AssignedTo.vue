@@ -7,7 +7,7 @@
         header-bg-variant="secondary"
         header-text-variant="white"
         v-b-toggle.accordion-assignedTo
-        class="p-1"
+        class="p-1 myCustomCardHeader"
         role="tab"
       >
       </b-card-header>
