@@ -7,17 +7,12 @@
           header="Client"
           header-bg-variant="secondary"
           header-text-variant="white"
-          v-b-toggle.accordion-1
+          v-b-toggle.accordion-client
           class="p-1"
           role="tab"
         >
         </b-card-header>
-        <b-collapse
-          id="accordion-1"
-          visible
-          accordion="my-accordion"
-          role="tabpanel"
-        >
+        <b-collapse id="accordion-client" visible role="tabpanel">
           <b-card-body>
             <b-form>
               <b-form-group

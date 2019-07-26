@@ -6,17 +6,12 @@
         header="Case Status"
         header-bg-variant="secondary"
         header-text-variant="white"
-        v-b-toggle.accordion-1
+        v-b-toggle.accordion-caseStatus
         class="p-1"
         role="tab"
       >
       </b-card-header>
-      <b-collapse
-        id="accordion-1"
-        visible
-        accordion="my-accordion"
-        role="tabpanel"
-      >
+      <b-collapse id="accordion-caseStatus" visible role="tabpanel">
         <b-card-body>
           <b-form>
             <b-form-group id="status" label="Status" label-for="statusInput">

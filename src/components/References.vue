@@ -6,17 +6,12 @@
         header="References"
         header-bg-variant="secondary"
         header-text-variant="white"
-        v-b-toggle.accordion-1
+        v-b-toggle.accordion-references
         class="p-1"
         role="tab"
       >
       </b-card-header>
-      <b-collapse
-        id="accordion-1"
-        visible
-        accordion="my-accordion"
-        role="tabpanel"
-      >
+      <b-collapse id="accordion-references" visible role="tabpanel">
         <b-card-body>
           <b-table fixed striped hover :items="references" :fields="fields">
             <template slot="#" slot-scope="data">
