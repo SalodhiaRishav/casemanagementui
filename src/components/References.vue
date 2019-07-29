@@ -58,7 +58,7 @@ export default {
     return {
       showReferenceForm: false,
       fields: ["type", "identity", "comment", "#"],
-      references: [],
+      references: this.$store.getters.references,
       referenceForm: {
         type: null,
         identity: "",

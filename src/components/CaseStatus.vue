@@ -34,9 +34,7 @@
 export default {
   data() {
     return {
-      statusForm: {
-        status: null
-      }
+      statusForm: this.$store.getters.statusForm
     };
   },
   computed: {

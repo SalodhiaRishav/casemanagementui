@@ -91,11 +91,7 @@
                 ></b-form-select>
               </b-form-group>
 
-              <b-form-group
-                id="email"
-                label="Client Identifier"
-                label-for="emailInput"
-              >
+              <b-form-group id="email" label="E-mail" label-for="emailInput">
                 <b-form-input
                   id="emailInput"
                   v-model="clientDetails.email"
@@ -114,16 +110,7 @@
 export default {
   data() {
     return {
-      clientDetails: {
-        clientIdentifier: "",
-        identifierType: null,
-        name: "",
-        address: "",
-        postalCode: "",
-        city: "",
-        country: null,
-        email: ""
-      }
+      clientDetails: this.$store.getters.clientDetails
     };
   },
   computed: {

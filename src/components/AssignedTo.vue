@@ -51,10 +51,7 @@
 export default {
   data() {
     return {
-      assignedToCpaForm: {
-        organizationalUnit: null,
-        cpa: null
-      }
+      assignedToCpaForm: this.$store.getters.assignedToCpaForm
     };
   },
   computed: {

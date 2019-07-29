@@ -60,11 +60,7 @@
 export default {
   data() {
     return {
-      caseInformation: {
-        description: "",
-        messageFromClient: "",
-        priority: null
-      }
+      caseInformation: this.$store.getters.caseInformation
     };
   },
   computed: {
